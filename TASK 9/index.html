@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Student Records File Update System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Records File Update System</h1>
+
+    <p>
+        Enter student details to add a new record
+        and view the updated student records.
+    </p>
+
+
+    <h2>Add Student Record</h2>
+
+    <form action="process.php" method="post">
+
+        <label>Student ID</label>
+
+        <input type="text"
+               name="student_id"
+               placeholder="Enter student ID"
+               required>
+
+
+        <label>Student Name</label>
+
+        <input type="text"
+               name="student_name"
+               placeholder="Enter student name"
+               required>
+
+
+        <label>Department</label>
+
+        <select name="department" required>
+
+            <option value="">
+                Select Department
+            </option>
+
+            <option value="CSE">
+                CSE
+            </option>
+
+            <option value="IT">
+                IT
+            </option>
+
+            <option value="ECE">
+                ECE
+            </option>
+
+        </select>
+
+
+        <label>Year</label>
+
+        <select name="year" required>
+
+            <option value="">
+                Select Year
+            </option>
+
+            <option value="I Year">
+                I Year
+            </option>
+
+            <option value="II Year">
+                II Year
+            </option>
+
+            <option value="III Year">
+                III Year
+            </option>
+
+            <option value="IV Year">
+                IV Year
+            </option>
+
+        </select>
+
+
+        <input type="submit"
+               value="Add Student Record">
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
