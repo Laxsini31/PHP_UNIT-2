@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Shipment Records File Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Shipment Records File Management System</h1>
+
+    <p>
+        Add shipment details and search existing
+        shipment records.
+    </p>
+
+
+    <h2>Add Shipment Record</h2>
+
+    <form action="process.php" method="post">
+
+        <input type="hidden"
+               name="action"
+               value="add">
+
+
+        <label>Shipment ID</label>
+
+        <input type="text"
+               name="shipment_id"
+               placeholder="Enter shipment ID"
+               required>
+
+
+        <label>Customer Name</label>
+
+        <input type="text"
+               name="customer_name"
+               placeholder="Enter customer name"
+               required>
+
+
+        <label>Destination</label>
+
+        <input type="text"
+               name="destination"
+               placeholder="Enter destination"
+               required>
+
+
+        <label>Shipment Status</label>
+
+        <select name="status" required>
+
+            <option value="">
+                Select Status
+            </option>
+
+            <option value="Processing">
+                Processing
+            </option>
+
+            <option value="Shipped">
+                Shipped
+            </option>
+
+            <option value="Delivered">
+                Delivered
+            </option>
+
+        </select>
+
+
+        <input type="submit"
+               value="Add Shipment">
+
+    </form>
+
+
+    <h2>Search Shipment Record</h2>
+
+    <form action="process.php" method="post">
+
+        <input type="hidden"
+               name="action"
+               value="search">
+
+
+        <label>Shipment ID</label>
+
+        <input type="text"
+               name="search_id"
+               placeholder="Enter shipment ID"
+               required>
+
+
+        <input type="submit"
+               value="Search Shipment">
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
