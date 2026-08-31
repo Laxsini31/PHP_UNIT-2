@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Visit Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Customer Visit Tracking</h1>
+
+    <p>
+        Enter your details to save your preferences
+        and track your website visits.
+    </p>
+
+    <form action="process.php" method="post">
+
+        <label>Customer Name</label>
+
+        <input type="text"
+               name="name"
+               placeholder="Enter your name"
+               required>
+
+        <label>Favorite Category</label>
+
+        <select name="category" required>
+
+            <option value="">
+                Select Category
+            </option>
+
+            <option value="Books">
+                Books
+            </option>
+
+            <option value="Electronics">
+                Electronics
+            </option>
+
+            <option value="Fashion">
+                Fashion
+            </option>
+
+            <option value="Sports">
+                Sports
+            </option>
+
+        </select>
+
+        <input type="submit"
+               value="Save Preferences">
+
+        <input type="reset"
+               value="Clear">
+
+    </form>
+
+</div>
+
+</body>
+</html>
