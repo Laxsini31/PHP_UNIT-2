@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Assignment Submission and File Validation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Assignment Submission System</h1>
+
+    <p>
+        Enter your details and upload your assignment.
+    </p>
+
+    <form action="process.php"
+          method="post"
+          enctype="multipart/form-data">
+
+        <label>Student Name</label>
+
+        <input type="text"
+               name="student_name"
+               placeholder="Enter student name"
+               required>
+
+
+        <label>Register Number</label>
+
+        <input type="text"
+               name="register_number"
+               placeholder="Enter register number"
+               required>
+
+
+        <label>Department</label>
+
+        <select name="department" required>
+
+            <option value="">
+                Select Department
+            </option>
+
+            <option value="CSE">
+                CSE
+            </option>
+
+            <option value="IT">
+                IT
+            </option>
+
+            <option value="ECE">
+                ECE
+            </option>
+
+        </select>
+
+
+        <label>Assignment File</label>
+
+        <input type="file"
+               name="assignment"
+               required>
+
+
+        <p class="note">
+            Allowed file types: PDF, DOCX and TXT
+        </p>
+
+
+        <input type="submit"
+               value="Upload Assignment">
+
+        <input type="reset"
+               value="Clear">
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
