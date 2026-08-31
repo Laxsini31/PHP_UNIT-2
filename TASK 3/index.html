@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Patient File Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Patient File Management System</h1>
+
+    <p>
+        Enter patient details to store the record
+        or search using Patient ID.
+    </p>
+
+    <h2>Store Patient Information</h2>
+
+    <form action="process.php" method="post">
+
+        <input type="hidden"
+               name="action"
+               value="store">
+
+        <label>Patient ID</label>
+
+        <input type="text"
+               name="patient_id"
+               placeholder="Enter patient ID"
+               required>
+
+        <label>Patient Name</label>
+
+        <input type="text"
+               name="patient_name"
+               placeholder="Enter patient name"
+               required>
+
+        <label>Age</label>
+
+        <input type="number"
+               name="age"
+               min="1"
+               required>
+
+        <label>Department</label>
+
+        <select name="department" required>
+
+            <option value="">
+                Select Department
+            </option>
+
+            <option value="Cardiology">
+                Cardiology
+            </option>
+
+            <option value="Neurology">
+                Neurology
+            </option>
+
+            <option value="Orthopedics">
+                Orthopedics
+            </option>
+
+        </select>
+
+        <label>Diagnosis</label>
+
+        <input type="text"
+               name="diagnosis"
+               placeholder="Enter diagnosis"
+               required>
+
+        <input type="submit"
+               value="Store Patient Record">
+
+    </form>
+
+
+    <h2>Search Patient Record</h2>
+
+    <form action="process.php" method="post">
+
+        <input type="hidden"
+               name="action"
+               value="search">
+
+        <label>Patient ID</label>
+
+        <input type="text"
+               name="search_id"
+               placeholder="Enter patient ID"
+               required>
+
+        <input type="submit"
+               value="Search Patient">
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
