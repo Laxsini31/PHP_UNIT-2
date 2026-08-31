@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", serif;
+    font-size: 12px;
+    background-color: #fff3e0;
+}
+
+.container {
+    width: 90%;
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px gray;
+}
+
+h1 {
+    text-align: center;
+    color: #e65100;
+    font-size: 14px;
+}
+
+h2 {
+    text-align: center;
+    color: #ef6c00;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: "Times New Roman", serif;
+    font-size: 12px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ef6c00;
+    color: white;
+    font-family: "Times New Roman", serif;
+    font-size: 12px;
+}
+
+.success-box,
+.log-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff8e1;
+    border-radius: 8px;
+}
+
+.error-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffebee;
+    border-radius: 8px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+.back {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #e65100;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+}

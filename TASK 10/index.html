@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Daily Project Log Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Daily Project Log Generator</h1>
+
+    <p>
+        Enter the project activity details to create
+        and store the daily project log.
+    </p>
+
+
+    <h2>Add Project Log</h2>
+
+    <form action="process.php" method="post">
+
+        <label>Project Name</label>
+
+        <input type="text"
+               name="project_name"
+               placeholder="Enter project name"
+               required>
+
+
+        <label>Activity Description</label>
+
+        <textarea name="activity"
+                  placeholder="Enter activity details"
+                  required></textarea>
+
+
+        <label>Team Member Name</label>
+
+        <input type="text"
+               name="member_name"
+               placeholder="Enter team member name"
+               required>
+
+
+        <input type="submit"
+               value="Create Daily Log">
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
