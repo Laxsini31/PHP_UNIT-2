@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", serif;
+    font-size: 12px;
+    background-color: #fce4ec;
+}
+
+.container {
+    width: 90%;
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px gray;
+}
+
+h1 {
+    text-align: center;
+    color: #880e4f;
+    font-size: 14px;
+}
+
+h2 {
+    text-align: center;
+    color: #ad1457;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: "Times New Roman", serif;
+    font-size: 12px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ad1457;
+    color: white;
+    font-family: "Times New Roman", serif;
+    font-size: 12px;
+}
+
+.success-box,
+.report-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fce4ec;
+    border-radius: 8px;
+}
+
+.error-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffebee;
+    border-radius: 8px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+.back {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-top: 25px;
+    background-color: #880e4f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+}

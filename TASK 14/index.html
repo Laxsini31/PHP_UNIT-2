@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Date and Time Report Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Date and Time Report Generator</h1>
+
+    <p>
+        Generate a customized report using
+        different date and time formats.
+    </p>
+
+    <form action="process.php" method="post">
+
+        <label>Report Name</label>
+
+        <input type="text"
+               name="report_name"
+               placeholder="Enter report name"
+               required>
+
+
+        <label>Select Date Format</label>
+
+        <select name="date_format" required>
+
+            <option value="d-m-Y">
+                DD-MM-YYYY
+            </option>
+
+            <option value="d/m/Y">
+                DD/MM/YYYY
+            </option>
+
+            <option value="d M Y">
+                DD Month YYYY
+            </option>
+
+            <option value="l, d F Y">
+                Day, DD Month YYYY
+            </option>
+
+        </select>
+
+
+        <label>Select Time Format</label>
+
+        <select name="time_format" required>
+
+            <option value="h:i:s A">
+                12 Hour Format
+            </option>
+
+            <option value="H:i:s">
+                24 Hour Format
+            </option>
+
+            <option value="h:i A">
+                Hours and Minutes
+            </option>
+
+        </select>
+
+
+        <input type="submit"
+               value="Generate Report">
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
