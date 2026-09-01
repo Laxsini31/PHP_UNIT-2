@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Multimedia File Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Multimedia File Management System</h1>
+
+    <p>
+        Upload, categorize, and search multimedia files.
+    </p>
+
+
+    <h2>Upload Multimedia File</h2>
+
+    <form action="process.php"
+          method="post"
+          enctype="multipart/form-data">
+
+        <label>Select File</label>
+
+        <input type="file"
+               name="multimedia_file"
+               required>
+
+
+        <label>Select Category</label>
+
+        <select name="category"
+                required>
+
+            <option value="">
+                Select Category
+            </option>
+
+            <option value="images">
+                Image
+            </option>
+
+            <option value="videos">
+                Video
+            </option>
+
+        </select>
+
+
+        <input type="submit"
+               name="upload"
+               value="Upload File">
+
+    </form>
+
+
+    <h2>Search Multimedia File</h2>
+
+    <form action="process.php"
+          method="post">
+
+        <label>File Name</label>
+
+        <input type="text"
+               name="search_file"
+               placeholder="Enter file name">
+
+        <input type="submit"
+               name="search"
+               value="Search File">
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
