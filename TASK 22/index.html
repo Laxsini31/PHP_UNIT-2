@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Report File Access System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Report File Access System</h1>
+
+    <p>
+        Select a report category to view available files.
+    </p>
+
+
+    <h2>Available Report Categories</h2>
+
+    <form action="process.php" method="post">
+
+        <label>Select Report Folder</label>
+
+        <select name="folder" required>
+
+            <option value="">
+                Select Folder
+            </option>
+
+            <option value="student_reports">
+                Student Reports
+            </option>
+
+            <option value="employee_reports">
+                Employee Reports
+            </option>
+
+            <option value="sales_reports">
+                Sales Reports
+            </option>
+
+        </select>
+
+
+        <input type="submit"
+               name="view"
+               value="View Reports">
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
