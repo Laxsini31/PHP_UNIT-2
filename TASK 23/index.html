@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Secure Document Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Secure Document Management System</h1>
+
+    <p>
+        Upload and manage documents securely.
+    </p>
+
+
+    <h2>Upload Document</h2>
+
+    <form action="process.php"
+          method="post"
+          enctype="multipart/form-data">
+
+        <label>Select Document</label>
+
+        <input type="file"
+               name="document"
+               required>
+
+
+        <p class="note">
+
+            Allowed formats: PDF and TXT<br>
+
+            Maximum file size: 2 MB
+
+        </p>
+
+
+        <input type="submit"
+               name="upload"
+               value="Upload Document">
+
+    </form>
+
+
+    <h2>Access Stored Documents</h2>
+
+    <form action="process.php"
+          method="post">
+
+        <input type="submit"
+               name="view"
+               value="View Documents">
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
