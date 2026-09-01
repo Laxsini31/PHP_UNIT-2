@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Hotel Stay Duration Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Hotel Stay Duration Calculator</h1>
+
+    <p>
+        Enter the guest check-in and check-out dates
+        to calculate the duration of stay.
+    </p>
+
+
+    <h2>Guest Stay Details</h2>
+
+    <form action="process.php" method="post">
+
+        <label>Guest Name</label>
+
+        <input type="text"
+               name="guest_name"
+               placeholder="Enter guest name"
+               required>
+
+
+        <label>Check-in Date</label>
+
+        <input type="date"
+               name="check_in"
+               required>
+
+
+        <label>Check-out Date</label>
+
+        <input type="date"
+               name="check_out"
+               required>
+
+
+        <input type="submit"
+               value="Calculate Stay Duration">
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
