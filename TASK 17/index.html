@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Department Document Directory Management</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Department Document Directory Management</h1>
+
+    <p>
+        Create, rename, and delete department folders.
+    </p>
+
+
+    <h2>Create Department Folder</h2>
+
+    <form action="process.php" method="post">
+
+        <input type="hidden"
+               name="action"
+               value="create">
+
+        <label>Department Name</label>
+
+        <input type="text"
+               name="department_name"
+               placeholder="Enter department name"
+               required>
+
+        <input type="submit"
+               value="Create Folder">
+
+    </form>
+
+
+    <h2>Rename Department Folder</h2>
+
+    <form action="process.php" method="post">
+
+        <input type="hidden"
+               name="action"
+               value="rename">
+
+        <label>Current Department Name</label>
+
+        <input type="text"
+               name="old_name"
+               placeholder="Enter current folder name"
+               required>
+
+        <label>New Department Name</label>
+
+        <input type="text"
+               name="new_name"
+               placeholder="Enter new folder name"
+               required>
+
+        <input type="submit"
+               value="Rename Folder">
+
+    </form>
+
+
+    <h2>Delete Department Folder</h2>
+
+    <form action="process.php" method="post">
+
+        <input type="hidden"
+               name="action"
+               value="delete">
+
+        <label>Department Name</label>
+
+        <input type="text"
+               name="delete_name"
+               placeholder="Enter folder name"
+               required>
+
+        <input type="submit"
+               value="Delete Folder">
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
