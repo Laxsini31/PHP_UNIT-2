@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Resume Upload Validation System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Resume Upload Validation System</h1>
+
+    <p>
+        Upload your resume for validation.
+    </p>
+
+
+    <h2>Resume Upload Form</h2>
+
+    <form action="process.php"
+          method="post"
+          enctype="multipart/form-data">
+
+        <label>Applicant Name</label>
+
+        <input type="text"
+               name="applicant_name"
+               placeholder="Enter your name"
+               required>
+
+
+        <label>Select Resume</label>
+
+        <input type="file"
+               name="resume"
+               required>
+
+
+        <p class="note">
+            Allowed formats: PDF and DOCX<br>
+            Maximum file size: 2 MB
+        </p>
+
+
+        <input type="submit"
+               name="submit"
+               value="Upload Resume">
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
