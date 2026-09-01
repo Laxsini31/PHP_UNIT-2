@@ -1,0 +1,9 @@
+----------------------------------------
+Booking ID: TB20260831210557
+Customer Name: ARCHANA LAXSINI V C
+Email: 24sbcs008@psgrkcw.ac.in
+Destination: Hyderabad
+Travel Date: 31-03-2028
+Number of Travellers: 4
+Booking Date: 31-08-2026 09:05:57 PM
+----------------------------------------
